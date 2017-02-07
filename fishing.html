@@ -1,0 +1,58 @@
+<html><head><title>Fishing</title></head>
+<body bgcolor="#FFFF99" text="#800000">
+<h1 align="center">Fishing Store Order Form</h1>
+<p align="center">We Rent All Of Our Fishing Equipment By The Week.</p>
+<form method="post" name="form" action="javascript:void(0)">
+<table border="0" width="39%" align="center">
+<tr>
+<td width="48%"><b>Product Name</b></td>
+<td width="10%"><b>Price</b></td>
+<td width="43%"><b>Quality</b></td>
+</tr><tr>
+<td width="48%">1 Fishing Rod &amp; Reel</td>
+<td width="10%">
+<input type="text" name="txtRod" size="5" value="7.99"></td>
+<td width="43%"><select size="1" name="qRod">
+<option selected value="0">
+Select Quantity</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select></td></tr><tr>
+<td width="48%">1 Tackle Box</td>
+<td width="10%">
+<input type="text" name="txtBox" size="5" value="2.55"></td>
+<td width="43%"><select size="1" name="qBox" >
+<option selected value="0">
+Select Quantity</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select></td></tr></table>
+<p align="center">
+<input type="submit" value="Calculate your order" name="btn"Submit" onClick="calcTotal()">
+<input type="reset" value="Clear" name="btnClear" >
+<p align="center">Thank you for your purchase.</p>
+<p align="center">Your Total is:</p>
+<p align="center">
+<input type="text" name="txtTotal" size="10" value="0.00"></p>
+</form>
+<script language="javascript">
+function calcTotal(){
+var strRod, strBox, prRod, strTotal;
+strRod=document.form.qRod.value;
+strBox=document.form.qBox.value;
+prRod=document.form.txtRod.value;
+prBox=document.form.txtBox.value;
+strRod=parseInt(strRod)*prRod;
+strBox=parseInt(strBox)*prBox;
+strTotal=(str + strBox);
+document.form.txtTotal.value=strTotal;
+}
+</script></body></html>
+
+
+
+
+
+
