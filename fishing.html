@@ -52,6 +52,28 @@ document.form.txtTotal.value=strTotal;
 </script></body></html>
 
 <html><head><title>Choose a Color</title>
+  <head>
+    <body>
+      <h3>Choose a color for your background:<h3>
+        <form name="frmColor" action="javascript:void(0);">
+          <input type="submit" value="White" name="bW" onClick="selectColor ('White')">
+          <input type="submit" value="Yellow" name="bY" onClick="selectColor ('Yellow')">
+          <input type="submit" value="Fuchsia" name="bF" onClick="selectColor ('Fuchsia')">
+          <input type="submit" value="Green" name="bG" onClick="selectColor ('Green')">
+          <input type="submit" value="Purple" name="bP" onClick="selectColor ('Purple')">
+          <input type="submit" value="Silver" name="bS" onClick="selectColor ('Silver')">
+          <input type="submit" value="Teal" name="bT" onClick="selectColor ('Teal')">  
+          <input type="submit" value="Olive" name="bO" onClick="selectColor ('Olive')">
+        </form></body></html>
+        
+        <script language="javascript">
+          function selectColor(selectColor){
+            document.bgColor=selectColor;
+        </script>
+        
+        <script language="javascript">
+          window.defaultStatus="Welcome to Fish Cove!";
+        </script>
 
 
 
